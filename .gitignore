@@ -1,4 +1,3 @@
 /build
-/cli.spec
-/createHello.spec
+/*.spec
 /dist
