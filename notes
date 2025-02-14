@@ -1,0 +1,29 @@
+не використовувати явний відносний імпорт для точки входу
+
+Структура:
+project/
+|
+├── reader/
+|   ├── __init__.py
+|   ├── __main__.py
+|   ├── config.cfg
+|   ├── feed.py
+|   └── viewer.py
+|
+├── cli.py
+├── LICENSE
+├── MANIFEST.in
+├── README.md
+├── setup.py
+└── tests
+
+Встановити pyinstaller: pip install pyinstaller
+
+pyinstaller cli.py зкомпілює виконувану програму
+pyinstaller cli.py --name newName --onefile перейменує вихідний файл  
+і запакує в нього весь проект
+
+1. Створити точку входу (reader.__main__)
+2. Створити сценарій виклику точки входу (cli.py)
+3. Запустити pyinstaller
+4. Переглянути папку dist
